@@ -1,0 +1,108 @@
+/* Загальні стилі та кольорова гама буфету УКД */
+:root {
+    --primary-color: #e65100;
+    --primary-hover: #f57c00;
+    --dark-bg: #1e1e24;
+    --card-bg: #ffffff;
+    --text-color: #2b2b2b;
+    --accent-yellow: #ffb74d;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: var(--text-color);
+}
+
+/* Навігація між версіями практичної */
+.version-nav {
+    background-color: #111115;
+    padding: 12px 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.version-nav span {
+    color: #fff;
+    margin-right: 15px;
+    font-weight: 600;
+}
+
+.version-nav a {
+    color: var(--accent-yellow);
+    text-decoration: none;
+    margin: 0 6px;
+    padding: 6px 14px;
+    border: 1px solid var(--accent-yellow);
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.version-nav a.active, .version-nav a:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Шапка сайту */
+header {
+    background: linear-gradient(135deg, #1e1e24 0%, #2c2c35 100%);
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: var(--accent-yellow);
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: var(--card-bg);
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+h2, h3 {
+    color: #1a1a1a;
+    border-bottom: 2px solid #fff3e0;
+    padding-bottom: 8px;
+}
+
+a[href] {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a[href]:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}

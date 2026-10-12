@@ -1,0 +1,79 @@
+/* Таблиця меню піци */
+.table-container {
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid #2b2b2b;
+    width: 100%;
+    min-width: 550px;
+    background-color: #fff;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+th, td {
+    border: 2px solid #2b2b2b;
+    padding: 12px;
+    text-align: left;
+}
+
+thead {
+    background-color: #ffe0b2;
+    color: #e65100;
+}
+
+tfoot {
+    background-color: #fff3e0;
+    font-weight: bold;
+}
+
+/* Веб-форма */
+form {
+    margin-top: 15px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #444;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #e65100;
+    box-shadow: 0 0 5px rgba(230, 81, 0, 0.3);
+}
+
+button[type="submit"] {
+    background-color: #e65100;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+}

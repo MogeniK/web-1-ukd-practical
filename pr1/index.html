@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Піца буфету УКД - Адаптивний сайт</title>
+    <!-- Підключення стилів -->
+    <link rel="stylesheet" href="css/base.html.css">
+    <link rel="stylesheet" href="css/table-form.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<nav class="version-nav">
+    <span>Версії сайту:</span>
+    <a href="task1.html">Версія 1 (HTML)</a>
+    <a href="task2.html">Версія 2 (Таблиця + Форма)</a>
+    <a href="index.html" class="active">Версія 3 (Full CSS)</a>
+</nav>
+
+<header>
+    <h1>🍕 Піца Буфету УКД</h1>
+    <p>Свіжа, соковита та гаряча піца прямо в приміщенні Університету Короля Данила!</p>
+</header>
+
+<main>
+    <section id="about">
+        <h2>Про наш буфет</h2>
+        <p><b>Піца буфету УКД</b> — це не просто перекус, а справжня студентська традиція! Щодня ми готуємо піцу за перевіреними рецептами, щоб ви мали змогу швидко та смачно пообідати між лекціями.</p>
+        <br>
+        <img class="pizza-img" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80" alt="Свіжа Піца УКД" width="450">
+    </section>
+
+    <section id="menu">
+        <h2>Меню та цінники</h2>
+        <div class="table-container">
+            <table>
+                <caption>Спеціальне меню піци буфету УКД</caption>
+                <thead>
+                <tr>
+                    <th rowspan="2">Назва піци</th>
+                    <th colspan="2">Склад та вага</th>
+                    <th rowspan="2">Ціна</th>
+                </tr>
+                <tr>
+                    <th>Інгредієнти</th>
+                    <th>Вага</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Студентська Фірмова</td>
+                    <td>Мисливські ковбаски, моцарела, кукурудза, соус</td>
+                    <td>420 г</td>
+                    <td>95 грн</td>
+                </tr>
+                <tr>
+                    <td>Пепероні УКД</td>
+                    <td>Пепероні, моцарела, томатний соус, орегано</td>
+                    <td>400 г</td>
+                    <td>105 грн</td>
+                </tr>
+                <tr>
+                    <td>Чотири Сири (Преміум)</td>
+                    <td>Моцарела, дорблю, пармезан, чедер</td>
+                    <td>380 г</td>
+                    <td>120 грн</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="3">Знижка за студентським квитком</td>
+                    <td>-10%</td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get in touch with us</h2>
+        <form action="#" method="post">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" class="form-control" name="first_name" required minlength="3" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" class="form-control" name="last_name" required minlength="3" placeholder="Last Name">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="query-type">Type of query</label>
+                <select id="query-type" class="form-control" name="query_type" required>
+                    <option value="">-- Оберіть варіант --</option>
+                    <option value="order">Замовлення піци на перерву</option>
+                    <option value="support">Служба підтримки / Відгуки</option>
+                    <option value="catering">Організація студентських подій</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" class="form-control" name="phone" placeholder="Phone Number">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your message</label>
+                <textarea id="message" class="form-control" name="message" rows="4" required placeholder="Ваше повідомлення або деталі замовлення..."></textarea>
+            </div>
+
+            <button type="submit">SUBMIT</button>
+        </form>
+    </section>
+</main>
+</body>
+</html>
